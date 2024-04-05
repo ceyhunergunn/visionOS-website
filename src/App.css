@@ -41,7 +41,7 @@ body {
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.5) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 50%,
     rgba(0, 0, 0, 0.5) 100%
   );
   box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.2);
@@ -60,7 +60,7 @@ body {
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.5) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 50%,
     rgba(0, 0, 0, 0.5) 100%
   );
   backdrop-filter: blur(var(--bg-blur));
@@ -74,20 +74,19 @@ body {
 }
 
 .navbar-bg {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(var(--bg-blur));
-  box-shadow: 0px -2px 0px 0px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px -2px 0px 0px rgba(255, 255, 255, 0.2),
+    0px 2px 0px 0px rgba(255, 255, 255, 0.2);
   border-radius: 100px;
-  border-radius: 10 0px;
   position: absolute;
   transform: -50% -50%;
   left: calc(-1rem - 72px);
-  top: 30%;
-  height: 262.5px;
+  top: 32%;
   width: 72px;
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1400px) {
   .os-main {
     width: 95%;
   }
@@ -118,7 +117,7 @@ body {
   height: 50px;
   background: rgba(12, 12, 12, 0.3);
   border-radius: 24px;
-  box-shadow: inset 0px -2px 0px 0px rgba(255, 255, 255, 0.4),
+  box-shadow: inset 0px -2px 0px 0px rgba(255, 255, 255, 0.2),
     inset 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 .url-items {
@@ -140,7 +139,7 @@ body {
 .url-width2 {
   width: 70%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .url-items-flex {
     display: none;
   }
@@ -159,7 +158,7 @@ body {
   width: 100%;
   height: 75px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 5px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,4 +179,80 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Range Input */
+
+input[type="range"] {
+  background: none;
+  height: 24px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 90%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+input[type="range"]::-ms-fill-upper {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }

@@ -1,23 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import aA from "../assets/aA.png";
 import lock from "../assets/lock.png";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../contexts/AuthContext";
 
 const URLBar = () => {
+  const { blur, setBlur } = React.useContext(AuthContext);
+  const navigate = useNavigate();
   const downloadCV = () => {};
+
+  useEffect(() => {
+    document.documentElement.style.setProperty("--bg-blur", `${blur}px`);
+  }, [blur]);
 
   return (
     <div className="urlbar-bg">
       <div className="d-flex w-100 mx-auto h-100">
-        <div className="url-items-flex align-items-center justify-content-start url-width1">
-          <div className="url-items ms-3 me-3 d-flex align-items-center justify-content-center">
-            <i className="text-color icon-wh bi bi-house"></i>
+        <div className="url-items-flex align-items-center justify-content-center url-width1">
+          <div
+            className="url-items me-2 d-flex align-items-center justify-content-center"
+            onClick={() => navigate(-1)}
+          >
+            <i className="text-color icon-wh bi bi-caret-left"></i>
           </div>
-          <div className="url-items d-flex align-items-center justify-content-center">
+          <div
+            className="url-items me-2 d-flex align-items-center justify-content-center"
+            onClick={() => downloadCV()}
+          >
+            <i className="text-color icon-wh bi bi-box-arrow-down"></i>
+          </div>
+          <div
+            className="url-items me-2 d-flex align-items-center justify-content-center"
+            onClick={() => window.open("https://resume.hicci.com.tr/")}
+          >
             <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
           </div>
         </div>
         <div className="d-flex align-items-center justify-content-center url-width2">
-          <div className="urlbar-bar w-75">
+          <div className="urlbar-bar w-100">
             <div className="row w-100 mx-auto h-100">
               <div className="col-3 d-flex align-items-center justify-content-start">
                 <img src={aA} alt="aA" />
@@ -31,26 +51,21 @@ const URLBar = () => {
           </div>
         </div>
         <div className="url-items-flex align-items-center justify-content-end url-width1">
-          <div
-            className="url-items me-3 d-flex align-items-center justify-content-center"
-            onClick={() => downloadCV()}
-          >
-            <i className="text-color icon-wh bi bi-box-arrow-down"></i>
-          </div>
-          <div
-            className="url-items me-3 d-flex align-items-center justify-content-center"
-            onClick={() => window.open("https://resume.hicci.com.tr/")}
-          >
-            <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
-          </div>
+          <input
+            type="range"
+            min="10"
+            max="200"
+            value={blur}
+            onChange={(e) => setBlur(e.target.value)}
+          />
         </div>
       </div>
       <div className="url-items-none align-items-center justify-content-center w-100">
-        <div className="url-items me-3 d-flex align-items-center justify-content-center">
-          <i className="text-color icon-wh bi bi-house"></i>
-        </div>
-        <div className="url-items me-3 d-flex align-items-center justify-content-center">
-          <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
+        <div
+          className="url-items me-3 d-flex align-items-center justify-content-center"
+          onClick={() => navigate(-1)}
+        >
+          <i className="text-color icon-wh bi bi-caret-left"></i>
         </div>
         <div
           className="url-items me-3 d-flex align-items-center justify-content-center"
