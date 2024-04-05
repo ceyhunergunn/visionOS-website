@@ -28,8 +28,8 @@ const Home = () => {
       >
         <img className="img-width" src={ceyhun} alt="img" />
         <div
-          className="text-font2 text-style"
-          style={{ position: "absolute", fontSize: "60px", bottom: "25px" }}
+          className="text-font2 text-style text-center adaptive-bottom"
+          style={{ position: "absolute" }}
         >
           Ceyhun Ergün
         </div>
