@@ -3,11 +3,19 @@ import aA from "../assets/aA.png";
 import lock from "../assets/lock.png";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
+import cv from "../assets/Ceyhun_Ergun_CV.pdf";
 
 const URLBar = () => {
   const { blur, setBlur } = React.useContext(AuthContext);
   const navigate = useNavigate();
-  const downloadCV = () => {};
+  const downloadCV = () => {
+    const fileUrl = cv;
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Ceyhun_Ergun_CV.pdf";
+    link.target = "_blank";
+    link.click();
+  };
 
   useEffect(() => {
     document.documentElement.style.setProperty("--bg-blur", `${blur}px`);
@@ -44,7 +52,7 @@ const URLBar = () => {
               </div>
               <div className="col-6 d-flex align-items-center justify-content-center">
                 <img src={lock} alt="lock" className="me-2" />
-                <div className="text-color">hicci.com.tr</div>
+                <div className="text-color text-font">hicci.com.tr</div>
               </div>
               <div className="col-3"></div>
             </div>

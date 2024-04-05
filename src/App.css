@@ -13,6 +13,10 @@ body {
   font-size: 24px;
 }
 
+.text-font {
+  font-family: "SF Pro Display", sans-serif;
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
