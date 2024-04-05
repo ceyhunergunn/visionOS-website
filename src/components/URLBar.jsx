@@ -52,7 +52,7 @@ const URLBar = () => {
               </div>
               <div className="col-6 d-flex align-items-center justify-content-center">
                 <img src={lock} alt="lock" className="me-2" />
-                <div className="text-color text-font">hicci.com.tr</div>
+                <div className="text-color text-font2">hicci.com.tr</div>
               </div>
               <div className="col-3"></div>
             </div>
