@@ -1,14 +1,9 @@
 import "./App.css";
-import URLBar from "./components/URLBar";
-import Home from "./pages/Home";
+import AppRouter from "./router/AppRouter";
 
 function App() {
-  return (
-    <div className="main">
-      <URLBar />
-      <Home />
-    </div>
-  );
+  document.documentElement.style.setProperty("--bg-blur", `10px`);
+  return <AppRouter />;
 }
 
 export default App;

@@ -3,6 +3,8 @@ import aA from "../assets/aA.png";
 import lock from "../assets/lock.png";
 
 const URLBar = () => {
+  const downloadCV = () => {};
+
   return (
     <div className="urlbar-bg">
       <div className="d-flex w-100 mx-auto h-100">
@@ -29,10 +31,16 @@ const URLBar = () => {
           </div>
         </div>
         <div className="url-items-flex align-items-center justify-content-end url-width1">
-          <div className="url-items me-3 d-flex align-items-center justify-content-center">
+          <div
+            className="url-items me-3 d-flex align-items-center justify-content-center"
+            onClick={() => downloadCV()}
+          >
             <i className="text-color icon-wh bi bi-box-arrow-down"></i>
           </div>
-          <div className="url-items me-3 d-flex align-items-center justify-content-center">
+          <div
+            className="url-items me-3 d-flex align-items-center justify-content-center"
+            onClick={() => window.open("https://resume.hicci.com.tr/")}
+          >
             <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
           </div>
         </div>
@@ -44,10 +52,16 @@ const URLBar = () => {
         <div className="url-items me-3 d-flex align-items-center justify-content-center">
           <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
         </div>
-        <div className="url-items me-3 d-flex align-items-center justify-content-center">
+        <div
+          className="url-items me-3 d-flex align-items-center justify-content-center"
+          onClick={() => downloadCV()}
+        >
           <i className="text-color icon-wh bi bi-box-arrow-down"></i>
         </div>
-        <div className="url-items d-flex align-items-center justify-content-center">
+        <div
+          className="url-items d-flex align-items-center justify-content-center"
+          onClick={() => window.open("https://resume.hicci.com.tr/")}
+        >
           <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
         </div>
       </div>

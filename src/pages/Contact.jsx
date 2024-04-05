@@ -3,18 +3,19 @@ import NavBar from "../components/NavBar";
 import DragBtn from "../components/DragBtn";
 import { AuthContext } from "../contexts/AuthContext";
 
-const Home = () => {
+const Contact = () => {
   const { setPage } = React.useContext(AuthContext);
   useEffect(() => {
-    setPage("home");
+    setPage("contact");
     //eslint-disable-next-line
   }, []);
   return (
     <div className="os-main">
+      Contact
       <NavBar />
       <DragBtn />
     </div>
   );
 };
 
-export default Home;
+export default Contact;

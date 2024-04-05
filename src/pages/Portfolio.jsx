@@ -3,18 +3,19 @@ import NavBar from "../components/NavBar";
 import DragBtn from "../components/DragBtn";
 import { AuthContext } from "../contexts/AuthContext";
 
-const Home = () => {
+const Portfolio = () => {
   const { setPage } = React.useContext(AuthContext);
   useEffect(() => {
-    setPage("home");
+    setPage("portfolio");
     //eslint-disable-next-line
   }, []);
   return (
     <div className="os-main">
+      Portfolio
       <NavBar />
       <DragBtn />
     </div>
   );
 };
 
-export default Home;
+export default Portfolio;
