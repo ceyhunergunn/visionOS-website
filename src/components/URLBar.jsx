@@ -62,23 +62,31 @@ const URLBar = () => {
       </div>
       <div className="url-items-none align-items-center justify-content-center w-100">
         <div
-          className="url-items me-3 d-flex align-items-center justify-content-center"
+          className="url-items me-2 d-flex align-items-center justify-content-center"
           onClick={() => navigate(-1)}
         >
           <i className="text-color icon-wh bi bi-caret-left"></i>
         </div>
         <div
-          className="url-items me-3 d-flex align-items-center justify-content-center"
+          className="url-items me-2 d-flex align-items-center justify-content-center"
           onClick={() => downloadCV()}
         >
           <i className="text-color icon-wh bi bi-box-arrow-down"></i>
         </div>
         <div
-          className="url-items d-flex align-items-center justify-content-center"
+          className="url-items me-3 d-flex align-items-center justify-content-center"
           onClick={() => window.open("https://resume.hicci.com.tr/")}
         >
           <i className="text-color icon-wh bi bi-box-arrow-up-right"></i>
         </div>
+        <input
+          className="w-50"
+          type="range"
+          min="10"
+          max="200"
+          value={blur}
+          onChange={(e) => setBlur(e.target.value)}
+        />
       </div>
     </div>
   );
