@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavBar from "../components/NavBar";
 import DragBtn from "../components/DragBtn";
 import { AuthContext } from "../contexts/AuthContext";
-import ceyhun from "../assets/ceyhun.png";
+import ceyhun from "../assets/ceyhun3.png";
 
 const Home = () => {
   const { setPage } = React.useContext(AuthContext);
@@ -10,6 +10,7 @@ const Home = () => {
     setPage("home");
     //eslint-disable-next-line
   }, []);
+
   return (
     <div
       className="os-main text-color text-font d-flex flex-column justify-content-center"
@@ -27,8 +28,8 @@ const Home = () => {
       >
         <img className="img-width" src={ceyhun} alt="img" />
         <div
-          className="text-color2 text-font2"
-          style={{ position: "absolute", fontSize: "50px" }}
+          className="text-font2 text-style"
+          style={{ position: "absolute", fontSize: "60px", bottom: "25px" }}
         >
           Ceyhun Ergün
         </div>

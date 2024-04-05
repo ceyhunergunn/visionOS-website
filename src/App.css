@@ -61,10 +61,12 @@ body {
 }
 
 .text-color {
-  color: #ddd;
+  color: #fef9ea;
 }
-.text-color2 {
-  color: red;
+.text-style {
+  background: url("./assets/bg2.png") 0 0 / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .icon-wh {
   font-size: 24px;
@@ -72,7 +74,7 @@ body {
 
 .text-font {
   font-family: "Crimson Text", serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
 .text-font2 {
@@ -283,7 +285,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50px;
-  background: #ffffff;
+  background: #fef9ea;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -4px;
