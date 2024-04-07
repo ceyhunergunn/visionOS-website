@@ -80,13 +80,13 @@ body {
 }
 
 .text-color {
-  color: #fffbdd;
+  color: #ffd6d6;
 }
 .text-style {
   /* background: url("./assets/bg2.png") 0 0 / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  color: #fffbdd;
+  color: #ffd6d6;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.4);
 }
 .icon-wh {
@@ -283,13 +283,13 @@ body {
 
 .contact-detail {
   text-decoration: none;
-  color: #ffd6d6;
+  color: #fffbdd;
   cursor: pointer;
   transition: 0.2s linear;
 }
 
 .contact-detail:hover {
-  color: #ddd;
+  color: #ffd6d6;
   transition: 0.2s linear;
 }
 
@@ -331,7 +331,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50px;
-  background: #fffbdd;
+  background: #ffd6d6;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -4px;
@@ -414,7 +414,7 @@ input[type="range"]::-ms-thumb {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* box-shadow: 0 0 1px #fffbdd; */
+  /* box-shadow: 0 0 1px #ffd6d6; */
   font-weight: 700;
 }
 
