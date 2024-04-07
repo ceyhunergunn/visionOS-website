@@ -30,104 +30,55 @@ const Portfolio = () => {
           <img className="img-width" src={portfolio} alt="img" />
         </div>
         <div className="col-lg-9 col-md-9 col-sm-12 text-center p-0">
-          <div className="d-flex align-items-center justify-content-center">
+          <div className="d-flex align-items-center justify-content-center col-turn">
             <div class="myCard">
               <div class="innerCard">
-                <div
-                  class="frontSide"
-                  style={{ borderRadius: "0px", borderTopLeftRadius: "24px" }}
-                >
+                <div class="frontSide top-left-item">
                   <img
                     src={networkapp}
-                    className="w-100 h-100"
+                    className="w-100 h-100 top-left-item"
                     alt="networkapp"
-                    style={{ borderRadius: "0px", borderTopLeftRadius: "24px" }}
                   />
                 </div>
-                <div
-                  class="backSide"
-                  style={{ borderRadius: "0px", borderTopLeftRadius: "24px" }}
-                ></div>
+                <div class="backSide top-left-item"></div>
               </div>
             </div>
             <div class="myCard">
               <div class="innerCard">
-                <div
-                  class="frontSide"
-                  style={{ borderRadius: "0px", borderTopRightRadius: "24px" }}
-                >
+                <div class="frontSide top-right-item">
                   <img
                     src={networkapp}
-                    className="w-100 h-100"
+                    className="w-100 h-100 top-right-item"
                     alt="networkapp"
-                    style={{
-                      borderRadius: "0px",
-                      borderTopRightRadius: "24px",
-                    }}
                   />
                 </div>
-                <div
-                  class="backSide"
-                  style={{ borderRadius: "0px", borderTopRightRadius: "24px" }}
-                ></div>
+                <div class="backSide top-right-item"></div>
               </div>
             </div>
           </div>
-          <div className="d-flex align-items-center justify-content-center">
+          <div className="d-flex align-items-center justify-content-center col-turn">
             <div class="myCard">
               <div class="innerCard">
-                <div
-                  class="frontSide"
-                  style={{
-                    borderRadius: "0px",
-                    borderBottomLeftRadius: "24px",
-                  }}
-                >
+                <div class="frontSide bottom-left-item">
                   <img
                     src={networkapp}
-                    className="w-100 h-100"
+                    className="w-100 h-100 bottom-left-item"
                     alt="networkapp"
-                    style={{
-                      borderRadius: "0px",
-                      borderBottomLeftRadius: "24px",
-                    }}
                   />
                 </div>
-                <div
-                  class="backSide"
-                  style={{
-                    borderRadius: "0px",
-                    borderBottomLeftRadius: "24px",
-                  }}
-                ></div>
+                <div class="backSide bottom-left-item"></div>
               </div>
             </div>
             <div class="myCard">
               <div class="innerCard">
-                <div
-                  class="frontSide"
-                  style={{
-                    borderRadius: "0px",
-                    borderBottomRightRadius: "24px",
-                  }}
-                >
+                <div class="frontSide bottom-right-item">
                   <img
                     src={networkapp}
-                    className="w-100 h-100"
+                    className="w-100 h-100 bottom-right-item"
                     alt="networkapp"
-                    style={{
-                      borderRadius: "0px",
-                      borderBottomRightRadius: "24px",
-                    }}
                   />
                 </div>
-                <div
-                  class="backSide"
-                  style={{
-                    borderRadius: "0px",
-                    borderBottomRightRadius: "24px",
-                  }}
-                ></div>
+                <div class="backSide bottom-right-item"></div>
               </div>
             </div>
           </div>
