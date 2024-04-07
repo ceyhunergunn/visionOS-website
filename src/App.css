@@ -55,23 +55,38 @@
 :root {
   --bg-blur: 10px;
 }
-* {
-  padding: 0;
+html {
   margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
   padding: 0;
+
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("./assets/bg.png");
+  /* background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./assets/bg.png"); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .text-color {
-  color: #fff9ea;
+  color: #fffbdd;
 }
 .text-style {
   /* background: url("./assets/bg2.png") 0 0 / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  color: #fff9ea;
+  color: #fffbdd;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.4);
 }
 .icon-wh {
@@ -90,18 +105,6 @@ body {
 .main {
   width: 100vw;
   min-height: 100vh;
-  background-image: url("./assets/bg.png");
-  /* background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url("./assets/bg.png"); */
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -275,6 +278,32 @@ body {
   }
 }
 
+/* Contact */
+
+.contact-detail {
+  text-decoration: none;
+  color: #ffd6d6;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.contact-detail:hover {
+  color: #ddd;
+  transition: 0.2s linear;
+}
+
+.contact-detail,
+.contact-title {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 326px) {
+  .contact-detail,
+  .contact-title {
+    font-size: 16px;
+  }
+}
+
 /* Range Input */
 
 input[type="range"] {
@@ -301,7 +330,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50px;
-  background: #fff9ea;
+  background: #fffbdd;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -4px;
@@ -384,7 +413,7 @@ input[type="range"]::-ms-thumb {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* box-shadow: 0 0 1px #fff9ea; */
+  /* box-shadow: 0 0 1px #fffbdd; */
   font-weight: 700;
 }
 
