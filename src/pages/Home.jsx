@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div
       className="os-main text-color text-font d-flex flex-column justify-content-center"
-      style={{ fontSize: "40px" }}
+      style={{ fontSize: "40px", padding: "2rem 1rem" }}
     >
-      <div className="ms-5">h.</div>
+      <div className="ms-2">h.</div>
       <div className="text-center">
         developer
         <i className="bi bi-dot" style={{ fontSize: "30px" }}></i>
@@ -29,7 +29,7 @@ const Home = () => {
         <img className="img-width" src={ceyhun} alt="img" />
         <div
           className="text-font2 text-style text-center adaptive-bottom"
-          style={{ position: "absolute" }}
+          style={{ position: "absolute", fontWeight: "bold" }}
         >
           Ceyhun Ergün
         </div>
