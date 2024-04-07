@@ -384,8 +384,8 @@ input[type="range"]::-ms-thumb {
 /* Card */
 .myCard {
   background-color: transparent;
-  width: 33.3%;
-  height: 300px;
+  height: 197px;
+  width: 45%;
   perspective: 1000px;
 }
 

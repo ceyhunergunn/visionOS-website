@@ -16,12 +16,12 @@ const Contact = () => {
       className="os-main text-color text-font d-flex flex-column justify-content-center"
       style={{ fontSize: "40px", padding: "2rem 1rem" }}
     >
-      <div className="text-center">contact</div>
+      <div className="text-center mb-3">contact</div>
       <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+        <div className="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center">
           <img className="img-width" src={contact} alt="img" />
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 text-center d-flex align-items-center justify-content-center">
+        <div className="col-lg-9 col-md-9 col-sm-12 text-center d-flex align-items-center justify-content-center">
           <div className="text-font2 w-100">
             <div className="contact-title">e-mail</div>
             <div className="mb-3">

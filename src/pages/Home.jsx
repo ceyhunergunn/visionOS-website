@@ -17,7 +17,7 @@ const Home = () => {
       style={{ fontSize: "40px", padding: "2rem 1rem" }}
     >
       {/* <div className="ms-2">h.</div> */}
-      <div className="text-center">
+      <div className="text-center mb-3">
         developer
         <i className="bi bi-dot" style={{ fontSize: "30px" }}></i>
         engineer
