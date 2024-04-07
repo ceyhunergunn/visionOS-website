@@ -18,11 +18,9 @@ const Contact = () => {
     >
       <div className="text-center">contact</div>
       <div className="row">
-        <img
-          className="d-xl-block d-lg-block d-md-block d-none col-lg-6 col-md-6 col-sm-12 img-width"
-          src={contact}
-          alt="img"
-        />
+        <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+          <img className="img-width" src={contact} alt="img" />
+        </div>
         <div className="col-lg-6 col-md-6 col-sm-12 text-center d-flex align-items-center justify-content-center">
           <div className="text-font2 w-100">
             <div className="contact-title">e-mail</div>

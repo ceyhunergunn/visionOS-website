@@ -261,8 +261,9 @@ body {
 
 /* Home Screen */
 
-.img-width {
-  width: 545px;
+.img-width,
+.contact-img {
+  width: 445px;
 }
 .adaptive-bottom {
   bottom: 25px;
