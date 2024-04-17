@@ -20,7 +20,7 @@ const Portfolio = () => {
 
   return (
     <div
-      className="os-main text-color text-font d-flex flex-column justify-content-center"
+      className="os-main text-color text-font d-flex flex-column justify-content-center "
       style={{ fontSize: "40px", padding: "2rem 1rem" }}
     >
       <div className="text-center mb-3">portfolio</div>

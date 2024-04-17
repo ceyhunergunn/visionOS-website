@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import URLBar from "../components/URLBar";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
+import NavBarSm from "../components/NavBarSm";
 
 const AppRouter = () => {
   return (
@@ -18,6 +19,7 @@ const AppRouter = () => {
               <Route path="/portfolio/" element={<Portfolio />} />
             </Route>
           </Routes>
+          <NavBarSm />
         </div>
       </BrowserRouter>
     </div>

@@ -2,13 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
 
-const NavBar = () => {
+const NavBarSm = () => {
   const { page } = React.useContext(AuthContext);
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="navbar-bg">
+      <div className="navbar-sm">
+        {" "}
         <div className="navbar-items" onClick={() => navigate("/")}>
           <div
             className={page === "home" ? "navbar-item-selected" : "navbar-item"}
@@ -39,4 +40,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarSm;

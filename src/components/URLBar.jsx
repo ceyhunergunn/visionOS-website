@@ -22,7 +22,7 @@ const URLBar = () => {
   }, [blur]);
 
   return (
-    <div className="urlbar-bg">
+    <div className="urlbar-bg mt-3">
       <div className="d-flex w-100 mx-auto h-100">
         <div className="url-items-flex align-items-center justify-content-center url-width1">
           <div
