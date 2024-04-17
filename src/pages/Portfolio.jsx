@@ -4,13 +4,12 @@ import DragBtn from "../components/DragBtn";
 import { AuthContext } from "../contexts/AuthContext";
 
 import portfolio from "../assets/portfolio-character.png";
-import networkapp from "../assets/porfolio/networkapp.png";
-import devicemanagementapp from "../assets/porfolio/devicemanagementapp.png";
-import menuapp from "../assets/porfolio/menuapp.png";
-import rtls from "../assets/porfolio/rtlsapp.png";
-import restaurantapp from "../assets/porfolio/restaurantapp.png";
-import loginapp from "../assets/porfolio/loginapp.png";
-import konutapp from "../assets/porfolio/konutapp.png";
+import networkapplogo from "../assets/porfolio/networkapplogo.png";
+import devicemanagementapplogo from "../assets/porfolio/devicemanagementapplogo.png";
+import menuapplogo from "../assets/porfolio/menuapplogo.png";
+import rtlsapplogo from "../assets/porfolio/rtlsapplogo.png";
+import restaurantapplogo from "../assets/porfolio/restaurantapplogo.png";
+import konutapplogo from "../assets/porfolio/konutapplogo.png";
 
 const Portfolio = () => {
   const { setPage } = React.useContext(AuthContext);
@@ -29,57 +28,85 @@ const Portfolio = () => {
         <div className="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center">
           <img className="img-width" src={portfolio} alt="img" />
         </div>
-        <div className="col-lg-9 col-md-9 col-sm-12 text-center p-0">
-          <div className="d-flex align-items-center justify-content-center col-turn">
-            <div class="myCard">
-              <div class="innerCard">
-                <div class="frontSide top-left-item">
-                  <img
-                    src={networkapp}
-                    className="w-100 h-100 top-left-item"
-                    alt="networkapp"
-                  />
-                </div>
-                <div class="backSide top-left-item"></div>
+        <div className="col-lg-9 col-md-9 col-sm-12 text-center p-0 d-flex align-items-center">
+          <div className="row w-100 mx-auto">
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 my-4 networkapp"
+              id="networkapp"
+            >
+              <div className="portfolio-item mx-auto">
+                <img
+                  src={networkapplogo}
+                  style={{ width: "64px", height: "64px" }}
+                  alt="networkapplogo"
+                />
               </div>
+              <div className="portfolio-app-name">Network APP</div>
             </div>
-            <div class="myCard">
-              <div class="innerCard">
-                <div class="frontSide top-right-item">
-                  <img
-                    src={networkapp}
-                    className="w-100 h-100 top-right-item"
-                    alt="networkapp"
-                  />
-                </div>
-                <div class="backSide top-right-item"></div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 my-4 konutapp"
+              id="konutapp"
+            >
+              <div className="portfolio-item mx-auto">
+                <img
+                  src={konutapplogo}
+                  style={{ width: "64px", height: "64px" }}
+                  alt="konutapplogo"
+                />
               </div>
+              <div className="portfolio-app-name">Konut APP</div>
             </div>
-          </div>
-          <div className="d-flex align-items-center justify-content-center col-turn">
-            <div class="myCard">
-              <div class="innerCard">
-                <div class="frontSide bottom-left-item">
-                  <img
-                    src={networkapp}
-                    className="w-100 h-100 bottom-left-item"
-                    alt="networkapp"
-                  />
-                </div>
-                <div class="backSide bottom-left-item"></div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 my-4 restaurantapp"
+              id="restaurantapp"
+            >
+              <div className="portfolio-item mx-auto">
+                <img
+                  src={restaurantapplogo}
+                  style={{ width: "64px", height: "64px" }}
+                  alt="restaurantapplogo"
+                />
               </div>
+              <div className="portfolio-app-name">Restaurant APP</div>
             </div>
-            <div class="myCard">
-              <div class="innerCard">
-                <div class="frontSide bottom-right-item">
-                  <img
-                    src={networkapp}
-                    className="w-100 h-100 bottom-right-item"
-                    alt="networkapp"
-                  />
-                </div>
-                <div class="backSide bottom-right-item"></div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 my-4 menuapp"
+              id="menuapp"
+            >
+              <div className="portfolio-item mx-auto">
+                <img
+                  src={menuapplogo}
+                  style={{ width: "64px", height: "64px" }}
+                  alt="menuapplogo"
+                />
               </div>
+              <div className="portfolio-app-name">Menu APP</div>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 my-4 rtlsapp"
+              id="rtlsapp"
+            >
+              <div className="portfolio-item mx-auto">
+                <img
+                  src={rtlsapplogo}
+                  style={{ width: "64px", height: "64px" }}
+                  alt="rtlsapplogo"
+                />
+              </div>
+              <div className="portfolio-app-name">RTLS</div>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 my-4 devicemanagementapp"
+              id="devicemanagementapp"
+            >
+              <div className="portfolio-item mx-auto">
+                <img
+                  src={devicemanagementapplogo}
+                  style={{ width: "64px", height: "64px" }}
+                  alt="devicemanagementapplogo"
+                />
+              </div>
+              <div className="portfolio-app-name">Device Management APP</div>
             </div>
           </div>
         </div>
