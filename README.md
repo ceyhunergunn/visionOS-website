@@ -1,6 +1,4 @@
 VisionOS Personel Website
 
-2024 
-
-Ceyhun Ergün
+2024 - Ceyhun Ergün
 
